@@ -3,16 +3,17 @@
 # ## Rotina para localizar nome e salários do mês da FUABC
 
 #define ano, mês a área bem como o nome dos arquivos PDF baixados
-ano = 2020
-mes = 3
+#ano = 2020
+#mes = 3
 area = 90 #constante para indicar a FUABC no banco de dadaos do Cidade em Números https://cidadeemnumeros.com.br/
 apagaAnteriores = False
 
-print(ano, mes, area)
 
 #pede o ano e mês da Folha
-ano = int(input("Digite o ano de referência: "))
-mes = int(input("Digite o mes de referência: "))
+ano = int(input("Digite o ano (AAAA) de referência: "))
+mes = int(input("Digite o mes (MM) de referência: "))
+
+print(ano, mes, area)
 
 #importando o módulo
 import pdfminer
